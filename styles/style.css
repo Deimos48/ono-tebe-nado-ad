@@ -119,14 +119,15 @@
     /* LOTS */
 .lots {
     margin-top: 180px;
-    padding: 0 50px;
+    padding: 0 24px;
 }
 
 .lots_header {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 40px;
-	margin: 0 0 27px 0;
+	margin-left: 40px;
+	margin-bottom: 27px;
 }
 
 .lots_card-list {
@@ -139,7 +140,7 @@
 }
 
 .lots_card-list_item {
-	width: auto;
+	width: 334px;
 	min-height: 596px;
 }
 
@@ -189,8 +190,7 @@
 
 .lots_look-more-link {
 	font-size: 20px;
-	display: block;
-	margin-left: 0;
+	margin-left: 40px;
 	text-underline-offset: 4px;
 }
 
