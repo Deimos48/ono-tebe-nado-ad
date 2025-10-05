@@ -4,19 +4,28 @@
     z-index: 0;
 }
 
+.overlay::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: -1;
+}
+
     /* HEADER */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 90px 50px;
+	padding: 92px 50px 90px;
 }
 
 .header_menu-list {
     display: flex;
     list-style-type: circle;
     padding-bottom: 6px;
-    gap: 30px;
+    gap: 33px;
 }
 
 .menu-item {
@@ -33,7 +42,7 @@
 }
 
 .header_logo {
-    width: 140px;
+    width: 138px;
 }
 
 .header_address {
@@ -76,7 +85,7 @@
 }
 
 .cover_title > span:not(:first-child) {
-	margin-top: 22px;
+	margin-top: 18px;
 }
 
     /*TEXT SECTION*/
@@ -99,7 +108,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 103px;
 }
 
 .cover_description-text {
@@ -140,7 +149,6 @@
 	gap: 25px;
 	list-style-type: none;
 	margin-bottom: 30px;
-	padding: 0;
 }
 
 .lots_card-list_item {
@@ -158,7 +166,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	color: white;
-	padding: 48px 40px;
+	padding: 47px 40px 48px;
 	height: 100%;
 
 	background-repeat: no-repeat;
@@ -272,6 +280,10 @@
 
 .footer_menu-list {
 	list-style-type: none;
+}
+
+.footer_menu-item_no-buillit {
+	text-decoration: none;
 }
 
 .footer_social {
